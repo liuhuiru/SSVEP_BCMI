@@ -1,5 +1,9 @@
 # SSVEP_BCMI
-我的毕业工作
+我的毕业工作：这是一个基于SSVEP-BCI的脑机音乐接口系统，可以让用户使用眼睛注视选择音符，再由AI拓展生成音乐。
+
+自采数据集地址：https://github.com/liuhuiru/mySSVEPDatasets
+
+
 
 ### SSVEP信号分类
 
@@ -23,7 +27,15 @@ offline.py：用于离线采集程序
 
 online.py：用于在线准确率测试
 
-online
+online_with_AImusic.py：用户根据引导选择音符
+
+online_with_AImusic_withoutcue：用户自主选择音符
+
+EEGModel文件夹：model文件夹中因存放你自己训练好的深度模型分类器
+
+music文件夹：存放音乐相关，包括生成读取midi音乐，系统发声使用的是pretty_midi和pygame库，需要事先安装
+
+
 
 ### AI音乐生成参考
 
@@ -41,4 +53,6 @@ ps：
 
 一篇很好的博客（可以帮助了解AI生成音乐）：https://eurychen.me/post/music/ai-compose-music/
 
-musicmodel文件夹中存放了两个已经训练好的模型，一个迭代了50次，一个迭代了100次
+music/model文件夹中存放了两个已经训练好的模型，一个迭代了50次，一个迭代了100次
+
+资料是后期整理的，所以运行的时候报错很有可能是文件路径错误，可以自己检查一下
